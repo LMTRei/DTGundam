@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/1147679ae7.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" integrity="sha384-..." crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-..." crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
+    <script src="jquery.min.js"></script>
+    <script src="owlcarousel/owl.carousel.min.js"></script>
+
+    <title>DT Figure</title>
+</head>
+<body>
+  <!--Header-->
+    <header class="header">
+      <!--Logo Slogan-->
+      <div class="logo">
+        <img src="image/logo.png" alt="logo">
+        <h1 class="slogan">Slogan của trang web</h1>
+      </div>
+      <!--End Logo Slogan-->
+      <!--Search-->
+      <div class="search">
+        <input type="text" placeholder="Tìm kiếm...">
+        <button type="submit"><i class="fa fa-search"></i></button>
+      </div>
+      <!--End Search-->
+      <!--Menu-->
+      <nav class="navigation">
+        <ul>
+          <li><a href="#">Trang chủ</a></li>
+          <li class="dropdown">
+            <a href="#">Sản phẩm</a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Gundam Japan</a></li>
+              <li><a href="#">Gundam China</a></li>
+              <li><a href="#">Các sản phẩm khác</a></li>
+              <li><a href="#">Phụ kiện</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Giới thiệu</a></li>
+          <li><a href="#">Liên hệ</a></li>
+        </ul>
+      </nav>
+      <!--End Menu-->
+      <!--Icon-->
+      <div class="user">
+        <div class="dropdown">
+          <a href="#" class="dropbtn"><i class="fa fa-user"></i></a>
+          <div class="dropdown-content">
+            <form>
+              <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+              </div>
+              <div class="form-group">
+                <label for="password">Mật khẩu:</label>
+                <input type="password" id="password" name="password" required>
+              </div>
+              <button type="submit">Đăng nhập</button>
+            </form>
+          </div>
+        </div>
+        <div class="dropdown">
+          <a href="#" class="dropbtn"><i class="fa fa-shopping-cart"></i></a>
+          <div class="dropdown-content">
+            <ul class="cart-items">
+              <li class="cart-item">
+                <img src="https://via.placeholder.com/80x80" alt="Product Image">
+                <div class="cart-info">
+                  <h4>Product Name</h4>
+                  <p>Giá: 100.000 VNĐ</p>
+                  <p>SL: 1</p>
+                </div>
+                <a href="#" class="remove-item"><i class="fa fa-times"></i></a>
+              </li>
+              <li class="cart-item">
+                <img src="https://via.placeholder.com/80x80" alt="Product Image">
+                <div class="cart-info">
+                  <h4>Product Name</h4>
+                  <p>Giá: 200.000 VNĐ</p>
+                  <p>SL: 2</p>
+                </div>
+                <a href="#" class="remove-item"><i class="fa fa-times"></i></a>
+              </li>
+              <li class="cart-total">
+                <span class="total-label">Tổng:</span>
+                <span class="total-price">500.000 VNĐ</span>
+              </li>
+              <li class="cart-buttons">
+                <a href="#" class="cart-btn checkout-btn">Thanh Toán</a>
+                <a href="#" class="cart-btn view-cart-btn">Giỏ Hàng</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="dropdown">
+          <a href="#" class="dropbtn"><i class="fa fa-heart"></i></a>
+          <div class="dropdown-content">
+            <ul class="wishlist-items">
+              <li class="wishlist-item">
+                <img src="https://via.placeholder.com/80x80" alt="Product Image">
+                <div class="wishlist-info">
+                  <h4>Product Name</h4>
+                  <p>Giá: 100.000 VNĐ</p>
+                </div>
+                <a href="#" class="remove-item"><i class="fa fa-times"></i></a>
+              </li>
+              <li class="wishlist-item">
+                <img src="https://via.placeholder.com/80x80" alt="Product Image">
+                <div class="wishlist-info">
+                  <h4>Product Name</h4>
+                  <p>Giá: 200.000 VNĐ</p>
+                </div>
+                <a href="#" class="remove-item"><i class="fa fa-times"></i></a>
+              </li>
+              <li class="wishlist-buttons">
+                <a href="#" class="wishlist-btn clear-btn">Xóa Danh Sách</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      </div>
+      <!--End Icon-->
+  </header>
+  <!--End Header-->
+
+    <!--Slider-->
+    <section>
+      <div class="slider">
+        <div class="slide">
+          <img src="image/banner_01.jpg" alt="Slider image 1">
+        </div>
+        <div class="slide">
+          <img src="image/banner_02.jpg" alt="Slider image 2">
+        </div>
+        <div class="slide">
+          <img src="image/banner_03.jpg" alt="Slider image 3">
+        </div>
+        <div class="dots">
+          <button class="dot"></button>
+          <button class="dot"></button>
+          <button class="dot"></button>
+        </div>
+      </div>
+    </section>
+    <!--End Slider-->
+
+    <!--Danh mục sản phẩm-->
+    <section class="featured-categories">
+      <div class="container">
+        <h2>Danh mục nổi bật</h2>
+        <div class="category-list">
+          <div class="category">
+            <img src="image/danhmuc_01.jpg" alt="Category Name">
+            <h3>High Grade - HG</h3>
+            <a href="#" class="btn">Xem thêm</a>
+          </div>
+          <div class="category">
+            <img src="image/danhmuc_02.jpg" alt="Category Name">
+            <h3>Entry Grade - EG</h3>
+            <a href="#" class="btn">Xem thêm</a>
+          </div>
+          <div class="category">
+            <img src="image/danhmuc_03.jpg" alt="Category Name">
+            <h3>Metal Build - MB</h3>
+            <a href="#" class="btn">Xem thêm</a>
+          </div>
+          <div class="category">
+            <img src="image/danhmuc_04.jpg" alt="Category Name">
+            <h3>Tool - Base - Phụ Kiện</h3>
+            <a href="#" class="btn">Xem thêm</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--End Danh mục sản phẩm-->
+
+    <!--Sản phẩm bán chạy nhất-->
+    <section class="popular-products">
+      <div class="container">
+        <h2 class="section-title">Sản phẩm xem nhiều nhất</h2>
+        <div class="product-list">
+          <div class="product-item">
+            <a href="#">
+              <img src="image/sanpham_01.jpg" alt="Product 1">
+              <h3>Product 1</h3>
+              <p class="price">Giá: 100.000 VNĐ</p>
+            </a>
+          </div>
+          <div class="product-item">
+            <a href="#">
+              <img src="image/sanpham_02.jpg" alt="Product 2">
+              <h3>Product 2</h3>
+              <p class="price">Giá: 200.000 VNĐ</p>
+            </a>
+          </div>
+          <div class="product-item">
+            <a href="#">
+              <img src="image/sanpham_03.jpg" alt="Product 3">
+              <h3>Product 3</h3>
+              <p class="price">Giá: 300.000 VNĐ</p>
+            </a>
+          </div>
+          <div class="product-item">
+            <a href="#">
+              <img src="image/sanpham_04.jpg" alt="Product 4">
+              <h3>Product 4</h3>
+              <p class="price">Giá: 400.000 VNĐ</p>
+            </a>
+          </div>
+          <div class="product-item">
+            <a href="#">
+              <img src="image/sanpham_01.jpg" alt="Product 5">
+              <h3>Product 5</h3>
+              <p class="price">Giá: 500.000 VNĐ</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--End Sản phẩm bán chạy nhất-->
+
+    <!--Sản phẩm order-->
+    <section class="product-order">
+      <div class="container">
+        <div class="row">
+          <h2 class="text-center">Sản phẩm Order</h2> 
+          <div class="col-md-6">
+            <div class="product-list">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="product">
+                    <img src="image/sanpham_01.jpg" alt="Product Name">
+                    <h3>Product Name</h3>
+                    <p class="price">Giá: 100.000 VNĐ</p>
+                    <button class="btn order-btn">Đặt hàng</button>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="product">
+                    <img src="image/sanpham_02.jpg" alt="Product Name">
+                    <h3>Product Name</h3>
+                    <p class="price">Giá: 100.000 VNĐ</p>
+                    <button class="btn order-btn">Đặt hàng</button>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="product">
+                    <img src="image/sanpham_03.jpg" alt="Product Name">
+                    <h3>Product Name</h3>
+                    <p class="price">Giá: 100.000 VNĐ</p>
+                    <button class="btn order-btn">Đặt hàng</button>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="product">
+                    <img src="image/sanpham_04.jpg" alt="Product Name">
+                    <h3>Product Name</h3>
+                    <p class="price">Giá: 100.000 VNĐ</p>
+                    <button class="btn order-btn">Đặt hàng</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="banner">
+              <img src="image/bannersp_01.jpg" alt="Banner Image">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--End Sản phẩm order-->
+
+    <!--Sản phẩm có sẵn-->
+    <section class="products-available">
+      <div class="container">
+        <div class="row">
+          <h2 class="text-center">Sản phẩm có sẵn</h2> 
+          <div class="col-md-6">
+            <div class="banner">
+              <img src="image/bannersp_01.jpg" alt="Banner Image">
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="product-list">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="product">
+                    <img src="image/sanpham_01.jpg" alt="Product Name">
+                    <h3>Product Name</h3>
+                    <p class="price">Giá: 100.000 VNĐ</p>
+                    <button class="btn order-btn">Đặt hàng</button>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="product">
+                    <img src="image/sanpham_02.jpg" alt="Product Name">
+                    <h3>Product Name</h3>
+                    <p class="price">Giá: 100.000 VNĐ</p>
+                    <button class="btn order-btn">Đặt hàng</button>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="product">
+                    <img src="image/sanpham_03.jpg" alt="Product Name">
+                    <h3>Product Name</h3>
+                    <p class="price">Giá: 100.000 VNĐ</p>
+                    <button class="btn order-btn">Đặt hàng</button>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="product">
+                    <img src="image/sanpham_04.jpg" alt="Product Name">
+                    <h3>Product Name</h3>
+                    <p class="price">Giá: 100.000 VNĐ</p>
+                    <button class="btn order-btn">Đặt hàng</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!--End Sản phẩm có sẵn-->
+
+    <!--Tin tức-->
+    <section class="news">
+      <div class="container">
+        <h2 class="section-title">Tin tức về thế giới Gundam</h2>
+        <div class="news-list">
+          <div class="news-item">
+            <a href="#">
+              <img src="image/news_01.jpg" alt="News 1">
+              <h3>LỊCH PHÁT HÀNH GUNPLA THÁNG 04/2022 - GUNDAM LINEUP APRIL 2022</h3>
+              <p class="date">Ngày đăng: 01/01/2023</p>
+              <p class="excerpt">Tháng 04 chơi gì? Load Astray Ω Omega lên kệ P-Bandai - Gunpla Lineup April 2022 & Restock list - GUNPLA REISSUE April 2022.</p>
+            </a>
+          </div>
+          <div class="news-item">
+            <a href="#">
+              <img src="image/news_02.jpg" alt="News 2">
+              <h3>VÌ SAO LOGO BANDAI CÓ 2 MÀU XANH ĐỎ ? NGUYÊN NHÂN BANDAI ĐỔI MÀU LOGO ? LOGO BANDAI CÓ NHIỀU MÀU ?</h3>
+              <p class="date">Ngày đăng: 02/01/2023</p>
+              <p class="excerpt">Vì Sao LOGO BANDAI có 2 màu Xanh Đỏ ? Nguyên Nhân Bandai đổi màu Logo ? Logo Bandai có nhiều màu ? Logo Bandai Đỏ còn không?</p>
+            </a>
+          </div>
+          <div class="news-item">
+            <a href="#">
+              <img src="image/news_03.jpg" alt="News 3">
+              <h3>LỊCH PHÁT HÀNH GUNPLA THÁNG 11 NĂM 2020</h3>
+              <p class="date">Ngày đăng: 03/01/2023</p>
+              <p class="excerpt">Tháng 11 sẽ làm cho chúng ta tốn kha khá ví tiền khi 2 mẫu được đánh giá là khá hot sẽ cùng ra mắt vào tháng này, và thời gian chỉ cách nhau 1 tuần nên anh em bà con hãy sẵn sàng túi tiền cho mình từ bây giờ để không phải khóc khi hàng về nhé ^^ NGÀY 14-11-2020 POKE...</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--End Tin tức-->
+
+    <!--services-->
+    <section class="services">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="service-item">
+              <i class="fa fa-truck"></i>
+              <h4>MIỄN PHÍ GIAO HÀNG</h4>
+              <p>Đối với hóa đơn từ 2.000.000 VNĐ đã thanh toán tại Tp.HCM</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="service-item">
+              <i class="fa fa-dollar-sign"></i>
+              <h4>Thanh toán đơn giản</h4>
+              <p>Chuyển khoản hoặc COD</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="service-item">
+              <i class="fa fa-headphones"></i>
+              <h4>MUA HÀNG (8H30 - 22H00, T2 - CN)</h4>
+              <p>Hotline Mua hàng 098.345.3535</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--End services-->
+
+
+    <!--Footer-->
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <h4>Giới thiệu DT Gundam</h4>
+            <p>Giúp các bạn trẻ Việt Nam dễ dàng tiếp cận với mô hình gundam</p>
+          </div>
+          <div class="col-md-3">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Shop</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <h4></h4>
+            <ul>
+              <li>Địa chỉ: Tp. Hồ Chí Minh.
+                Japan Figure chưa có không gian trưng bày, bạn vui lòng hẹn trước khi đến
+                </li>
+              <li>Điện thoại: 090 8268 007</li>
+              <li>Email: support@dtgundam.vn</li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <h4>Follow Us</h4>
+            <ul class="social-icons">
+              <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+              <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+              <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!--End Footer-->
+
+    <!--Slide-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <!--Slide-->
+
+</body>
+
+<script>
+  /*----Slide----*/
+  const dots = document.querySelectorAll('.dot');
+  const slides = document.querySelectorAll('.slide');
+  let currentSlide = 0;
+
+  dots.forEach((dot, index) => {
+    dot.addEventListener('click', () => {
+      // remove active class from all dots
+      dots.forEach(dot => dot.classList.remove('active'));
+      // add active class to clicked dot
+      dot.classList.add('active');
+      // hide all slides
+      slides.forEach(slide => slide.style.display = 'none');
+      // show the slide corresponding to the clicked dot
+      slides[index].style.display = 'block';
+      // update currentSlide index
+      currentSlide = index;
+    });
+  });
+
+  // automatic slideshow
+  setInterval(() => {
+    // remove active class from all dots
+    dots.forEach(dot => dot.classList.remove('active'));
+    // hide all slides
+    slides.forEach(slide => slide.style.display = 'none');
+    // show the next slide
+    currentSlide = (currentSlide + 1) % slides.length;
+    slides[currentSlide].style.display = 'block';
+    // add active class to the dot corresponding to the current slide
+    dots[currentSlide].classList.add('active');
+  }, 5000);
+  /*----End Slide----*/
+
+  /*----Danh mục sản phẩm-----*/
+  // Optional JavaScript for button hover effect
+  const btns = document.querySelectorAll('.btn');
+
+  btns.forEach(btn => {
+    btn.addEventListener('mouseenter', () => {
+      btn.classList.add('hovered');
+    });
+    btn.addEventListener('mouseleave', () => {
+      btn.classList.remove('hovered');
+    });
+  });
+  /*----End Danh mục sản phẩm-----*/
+
+  /*----Sản phẩm bán chạy nhất-----*/
+  // Khởi tạo carousel sử dụng thư viện Owl Carousel
+  $(document).ready(function(){
+    $('.product-list').owlCarousel({
+      loop:true, // Lặp lại vòng tròn
+      margin:20, // Khoảng cách giữa các sản phẩm
+      nav:false, // Không hiển thị nút điều hướng trước/sau
+      dots:false, // Không hiển thị chấm tròn
+      autoplay:true, // Tự động chuyển tiếp
+      autoplayTimeout:3000, // Thời gian chuyển tiếp (ms)
+      autoplayHoverPause:true, // Tạm dừng chuyển tiếp khi rê chuột vào
+      responsive:{
+          0:{
+              items:1 // Hiển thị 1 sản phẩm trên màn hình nhỏ
+          },
+          600:{
+              items:3 // Hiển thị 3 sản phẩm trên màn hình trung bình
+          },
+          1000:{
+              items:5 // Hiển thị 5 sản phẩm trên màn hình lớn
+          }
+      }
+    });
+  });
+  /*----End Sản phẩm bán chạy nhất-----*/
+
+  /*----Tin tức-----*/
+  // Khởi tạo carousel sử dụng thư viện Owl Carousel
+    $(document).ready(function(){
+    $('.news-list').owlCarousel({
+      loop:true,
+      margin:20,
+      nav:false,
+      dots:false,
+      autoplay:true,
+      autoplayTimeout:3000,
+      autoplayHoverPause:true,
+      responsive:{
+          0:{
+              items:1
+          },
+          600:{
+              items:2
+          },
+          1000:{
+              items:3 // Hiển thị 3 tin tức trên màn hình lớn hơn 1000px
+          }
+      }
+    });
+  });
+  /*----End Tin tức-----*/
+</script>
+
+</html>
