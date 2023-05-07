@@ -1,0 +1,835 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/1147679ae7.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/stylecol.css" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" integrity="sha384-..." crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-..." crossorigin="anonymous"></script>
+
+    <title>DT Gundam</title>
+</head>
+<body>
+  <!--Header-->
+    <header class="header">
+      <!--Logo Slogan-->
+      <div class="logo">
+        <img src="image/logo.png" alt="logo">
+        <h1 class="slogan">Slogan của trang web</h1>
+      </div>
+      <!--End Logo Slogan-->
+      <!--Search-->
+      <div class="search">
+        <input type="text" placeholder="Tìm kiếm...">
+        <button type="submit"><i class="fa fa-search"></i></button>
+      </div>
+      <!--End Search-->
+      <!--Menu-->
+      <nav class="navigation">
+        <ul>
+          <li><a href="#">Trang chủ</a></li>
+          <li class="dropdown">
+            <a href="#">Sản phẩm</a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Gundam Japan</a></li>
+              <li><a href="#">Gundam China</a></li>
+              <li><a href="#">Các sản phẩm khác</a></li>
+              <li><a href="#">Phụ kiện</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Giới thiệu</a></li>
+          <li><a href="#">Liên hệ</a></li>
+        </ul>
+      </nav>
+      <!--End Menu-->
+      <!--Icon-->
+      <div class="user">
+        <div class="dropdown">
+          <a href="#" class="dropbtn"><i class="fa fa-user"></i></a>
+          <div class="dropdown-content">
+            <form>
+              <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+              </div>
+              <div class="form-group">
+                <label for="password">Mật khẩu:</label>
+                <input type="password" id="password" name="password" required>
+              </div>
+              <button type="submit">Đăng nhập</button>
+            </form>
+          </div>
+        </div>
+        <div class="dropdown">
+          <a href="#" class="dropbtn"><i class="fa fa-shopping-cart"></i></a>
+          <div class="dropdown-content">
+            <ul class="cart-items">
+              <li class="cart-item">
+                <img src="https://via.placeholder.com/80x80" alt="Product Image">
+                <div class="cart-info">
+                  <h4>Product Name</h4>
+                  <p>Giá: 100.000 VNĐ</p>
+                  <p>SL: 1</p>
+                </div>
+                <a href="#" class="remove-item"><i class="fa fa-times"></i></a>
+              </li>
+              <li class="cart-item">
+                <img src="https://via.placeholder.com/80x80" alt="Product Image">
+                <div class="cart-info">
+                  <h4>Product Name</h4>
+                  <p>Giá: 200.000 VNĐ</p>
+                  <p>SL: 2</p>
+                </div>
+                <a href="#" class="remove-item"><i class="fa fa-times"></i></a>
+              </li>
+              <li class="cart-total">
+                <span class="total-label">Tổng:</span>
+                <span class="total-price">500.000 VNĐ</span>
+              </li>
+              <li class="cart-buttons">
+                <a href="#" class="cart-btn checkout-btn">Thanh Toán</a>
+                <a href="#" class="cart-btn view-cart-btn">Giỏ Hàng</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="dropdown">
+          <a href="#" class="dropbtn"><i class="fa fa-heart"></i></a>
+          <div class="dropdown-content">
+            <ul class="wishlist-items">
+              <li class="wishlist-item">
+                <img src="https://via.placeholder.com/80x80" alt="Product Image">
+                <div class="wishlist-info">
+                  <h4>Product Name</h4>
+                  <p>Giá: 100.000 VNĐ</p>
+                </div>
+                <a href="#" class="remove-item"><i class="fa fa-times"></i></a>
+              </li>
+              <li class="wishlist-item">
+                <img src="https://via.placeholder.com/80x80" alt="Product Image">
+                <div class="wishlist-info">
+                  <h4>Product Name</h4>
+                  <p>Giá: 200.000 VNĐ</p>
+                </div>
+                <a href="#" class="remove-item"><i class="fa fa-times"></i></a>
+              </li>
+              <li class="wishlist-buttons">
+                <a href="#" class="wishlist-btn clear-btn">Xóa Danh Sách</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      </div>
+      <!--End Icon-->
+  </header>
+  <!--End Header-->
+
+  <!--Banner-->
+  <div class="banner">
+    <img src="image/banner_01.jpg" alt="Banner Image">
+  </div>
+  <!--End Banner-->
+
+  <!--Breadcrumbs-->
+  <section class="breadcrumbs">
+    <a href="index.html">Trang chủ</a>
+    <span> > </span>
+    <span class="current-page">Gundam jappan</span>
+  </section>
+  <!--End Breadcrumbs-->
+
+  <!--Main-->
+  <main class="main">
+    <div class="container">
+      <div class="sidebar">
+        <div class="category">
+          <h3>Danh mục sản phẩm <span class="toggle-icon"></span></h3>
+          <ul class="category-list">
+            <li><a href="#">SD - SUPERROR DEFENDER</a></li>
+            <li><a href="#">RG - REAL GRADE 1/144</a></li>
+            <li><a href="#">MG - HIRM - RE/100 - 1/100</a></li>
+            <li><a href="#">PG 1/60 - MEGA SIZE 1/48</a></li>
+            <li><a href="#">HG IRON BLOODED ORPHAN</a></li>
+            <li><a href="#">FIGURE RISE - HAROPLA</a></li>
+            <li><a href="#">PETTITGGUY - PETTIT RITS</a></li>
+            <li><a href="#">DÒNG KHÁC</a></li>
+            <li><a href="#">30MM</a></li>
+            <li><a href="#">ENTRY - NGƯỜI MỚI CHƠI</a></li>
+            <li><a href="#">METAL BUILD</a></li>
+            <li><a href="#">KYOUKAI SENKI</a></li>
+          </ul>
+        </div>
+        <div class="filter">
+          <h3>Bộ lọc</h3>
+          <details class="status-checkboxes">
+            <summary>Tình trạng sản phẩm</summary>
+            <div class="checkboxes">
+              <div>
+                <input type="checkbox" name="status[]" value="available">
+                <label>Sẵn có</label>
+              </div>
+              <div>
+                <input type="checkbox" name="status[]" value="sold-out">
+                <label>Hết hàng</label>
+              </div>
+            </div>
+          </details>
+          <details class="brand-checkboxes">
+            <summary>Thương hiệu</summary>
+            <div class="checkboxes">
+              <div>
+                <input type="checkbox" name="brand[]" value="1/100 - RE/100">
+                <label>1/100 - RE/100</label>
+              </div>
+              <div>
+                <input type="checkbox" name="brand[]" value="30MM">
+                <label>30MM</label>
+              </div>
+              <div>
+                <input type="checkbox" name="brand[]" value="BANDAI">
+                <label>BANDAI</label>
+              </div>
+              <div>
+                <input type="checkbox" name="brand[]" value="BASE">
+                <label>BASE</label>
+              </div>
+              <div>
+                <input type="checkbox" name="brand[]" value="CUSTOM PART">
+                <label>CUSTOM PART</label>
+              </div>
+              <div>
+                <input type="checkbox" name="brand[]" value="ENTRYGRADE">
+                <label>ENTRYGRADE</label>
+              </div>
+            </div>
+          </details>
+          <details class="category-checkboxes">
+            <summary>Loại sản phẩm</summary>
+            <div class="checkboxes">
+              <div>
+                <input type="checkbox" name="category[]" value="gundam">
+                <label>Gundam</label>
+              </div>
+              <div>
+                <input type="checkbox" name="category[]" value="figure-rise">
+                <label>Figure Rise</label>
+              </div>
+              <div>
+                <input type="checkbox" name="category[]" value="pettitguy">
+                <label>Pettitguy</label>
+              </div>
+            </div>
+          </details>
+          <div class="form-group">
+            <label for="price">Giá:</label>
+            <div class="select-wrapper">
+              <select id="price-select" name="price">
+                <option value="">Tất cả</option>
+                <option value="under-100">Dưới 100k</option>
+                <option value="100-200">100k - 200k</option>
+                <option value="200-500">200k - 500k</option>
+                <option value="over-500">Trên 500k</option>
+                <option value="custom">Tùy chọn khác</option>
+              </select>
+              <div id="custom-price-input" class="custom-price-input">
+                <input type="number" id="min-price" name="min-price" placeholder="Từ">
+                <input type="number" id="max-price" name="max-price" placeholder="Đến">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="product-list">
+        <div class="sort">
+          <label for="sort">Sắp xếp theo:</label>
+          <select name="sort" id="sort">
+            <option value="popular">Phổ biến</option>
+            <option value="newest">Mới nhất</option>
+            <option value="price-low-to-high">Giá thấp đến cao</option>
+            <option value="price-high-to-low">Giá cao đến thấp</option>
+          </select>
+        </div>
+        <div class="product-items">
+          <!-- Danh sách sản phẩm -->
+          <div class="product-item">
+            <div class="product-image-container">
+              <img src="image/cangdao-01.jpg" alt="Product Name" class="product-image">
+              <div class="product-overlay">
+                <button class="btn-add-to-cart"><i class="fas fa-shopping-cart"></i></button>
+                <button class="btn-add-to-wishlist"><i class="fas fa-heart"></i></button>
+              </div>
+            </div>
+            <h3 class="product-name">Product Name</h3>
+            <p class="product-price">1,000,000 VND</p>
+            <p class="product-status in-stock">In Stock</p>
+          </div>
+          
+          <div class="product-item">
+            <div class="product-image-container">
+              <img src="image/cangdao-01.jpg" alt="Product Name" class="product-image">
+              <div class="product-overlay">
+                <button class="btn-add-to-cart"><i class="fas fa-shopping-cart"></i></button>
+                <button class="btn-add-to-wishlist"><i class="fas fa-heart"></i></button>
+              </div>
+            </div>
+            <h3 class="product-name">Product Name</h3>
+            <p class="product-price">2,000,000 VND</p>
+            <p class="product-status out-of-stock">Out of Stock</p>
+          </div>
+            
+          <div class="product-item">
+            <div class="product-image-container">
+              <img src="image/cangdao-01.jpg" alt="Product Name" class="product-image">
+              <div class="product-overlay">
+                <button class="btn-add-to-cart"><i class="fas fa-shopping-cart"></i></button>
+                <button class="btn-add-to-wishlist"><i class="fas fa-heart"></i></button>
+              </div>
+            </div>
+            <h3 class="product-name">Product Name</h3>
+            <p class="product-price">1,000,000 VND</p>
+            <p class="product-status in-stock">In Stock</p>
+          </div>
+          
+          <div class="product-item">
+            <div class="product-image-container">
+              <img src="image/cangdao-01.jpg" alt="Product Name" class="product-image">
+              <div class="product-overlay">
+                <button class="btn-add-to-cart"><i class="fas fa-shopping-cart"></i></button>
+                <button class="btn-add-to-wishlist"><i class="fas fa-heart"></i></button>
+              </div>
+            </div>
+            <h3 class="product-name">Product Name</h3>
+            <p class="product-price">2,000,000 VND</p>
+            <p class="product-status out-of-stock">Out of Stock</p>
+          </div>
+
+          <div class="product-item">
+            <div class="product-image-container">
+              <img src="image/cangdao-01.jpg" alt="Product Name" class="product-image">
+              <div class="product-overlay">
+                <button class="btn-add-to-cart"><i class="fas fa-shopping-cart"></i></button>
+                <button class="btn-add-to-wishlist"><i class="fas fa-heart"></i></button>
+              </div>
+            </div>
+            <h3 class="product-name">Product Name</h3>
+            <p class="product-price">1,000,000 VND</p>
+            <p class="product-status in-stock">In Stock</p>
+          </div>
+          
+          <div class="product-item">
+            <div class="product-image-container">
+              <img src="image/cangdao-01.jpg" alt="Product Name" class="product-image">
+              <div class="product-overlay">
+                <button class="btn-add-to-cart"><i class="fas fa-shopping-cart"></i></button>
+                <button class="btn-add-to-wishlist"><i class="fas fa-heart"></i></button>
+              </div>
+            </div>
+            <h3 class="product-name">Product Name</h3>
+            <p class="product-price">2,000,000 VND</p>
+            <p class="product-status out-of-stock">Out of Stock</p>
+          </div>
+
+          <div class="product-item">
+            <div class="product-image-container">
+              <img src="image/cangdao-01.jpg" alt="Product Name" class="product-image">
+              <div class="product-overlay">
+                <button class="btn-add-to-cart"><i class="fas fa-shopping-cart"></i></button>
+                <button class="btn-add-to-wishlist"><i class="fas fa-heart"></i></button>
+              </div>
+            </div>
+            <h3 class="product-name">Product Name</h3>
+            <p class="product-price">1,000,000 VND</p>
+            <p class="product-status in-stock">In Stock</p>
+          </div>
+          
+          <div class="product-item">
+            <div class="product-image-container">
+              <img src="image/cangdao-01.jpg" alt="Product Name" class="product-image">
+              <div class="product-overlay">
+                <button class="btn-add-to-cart"><i class="fas fa-shopping-cart"></i></button>
+                <button class="btn-add-to-wishlist"><i class="fas fa-heart"></i></button>
+              </div>
+            </div>
+            <h3 class="product-name">Product Name</h3>
+            <p class="product-price">2,000,000 VND</p>
+            <p class="product-status out-of-stock">Out of Stock</p>
+          </div>
+          
+          <div class="product-item">
+            <div class="product-image-container">
+              <img src="image/cangdao-01.jpg" alt="Product Name" class="product-image">
+              <div class="product-overlay">
+                <button class="btn-add-to-cart"><i class="fas fa-shopping-cart"></i></button>
+                <button class="btn-add-to-wishlist"><i class="fas fa-heart"></i></button>
+              </div>
+            </div>
+            <h3 class="product-name">Product Name</h3>
+            <p class="product-price">1,000,000 VND</p>
+            <p class="product-status in-stock">In Stock</p>
+          </div>
+          
+          <div class="product-item">
+            <div class="product-image-container">
+              <img src="image/cangdao-01.jpg" alt="Product Name" class="product-image">
+              <div class="product-overlay">
+                <button class="btn-add-to-cart"><i class="fas fa-shopping-cart"></i></button>
+                <button class="btn-add-to-wishlist"><i class="fas fa-heart"></i></button>
+              </div>
+            </div>
+            <h3 class="product-name">Product Name</h3>
+            <p class="product-price">2,000,000 VND</p>
+            <p class="product-status out-of-stock">Out of Stock</p>
+          </div>
+            
+          <div class="product-item">
+            <div class="product-image-container">
+              <img src="image/cangdao-01.jpg" alt="Product Name" class="product-image">
+              <div class="product-overlay">
+                <button class="btn-add-to-cart"><i class="fas fa-shopping-cart"></i></button>
+                <button class="btn-add-to-wishlist"><i class="fas fa-heart"></i></button>
+              </div>
+            </div>
+            <h3 class="product-name">Product Name</h3>
+            <p class="product-price">1,000,000 VND</p>
+            <p class="product-status in-stock">In Stock</p>
+          </div>
+          
+          <div class="product-item">
+            <div class="product-image-container">
+              <img src="image/cangdao-01.jpg" alt="Product Name" class="product-image">
+              <div class="product-overlay">
+                <button class="btn-add-to-cart"><i class="fas fa-shopping-cart"></i></button>
+                <button class="btn-add-to-wishlist"><i class="fas fa-heart"></i></button>
+              </div>
+            </div>
+            <h3 class="product-name">Product Name</h3>
+            <p class="product-price">2,000,000 VND</p>
+            <p class="product-status out-of-stock">Out of Stock</p>
+          </div>
+
+          <div class="product-item">
+            <div class="product-image-container">
+              <img src="image/cangdao-01.jpg" alt="Product Name" class="product-image">
+              <div class="product-overlay">
+                <button class="btn-add-to-cart"><i class="fas fa-shopping-cart"></i></button>
+                <button class="btn-add-to-wishlist"><i class="fas fa-heart"></i></button>
+              </div>
+            </div>
+            <h3 class="product-name">Product Name</h3>
+            <p class="product-price">1,000,000 VND</p>
+            <p class="product-status in-stock">In Stock</p>
+          </div>
+          
+          <div class="product-item">
+            <div class="product-image-container">
+              <img src="image/cangdao-01.jpg" alt="Product Name" class="product-image">
+              <div class="product-overlay">
+                <button class="btn-add-to-cart"><i class="fas fa-shopping-cart"></i></button>
+                <button class="btn-add-to-wishlist"><i class="fas fa-heart"></i></button>
+              </div>
+            </div>
+            <h3 class="product-name">Product Name</h3>
+            <p class="product-price">2,000,000 VND</p>
+            <p class="product-status out-of-stock">Out of Stock</p>
+          </div>
+
+          <div class="product-item">
+            <div class="product-image-container">
+              <img src="image/cangdao-01.jpg" alt="Product Name" class="product-image">
+              <div class="product-overlay">
+                <button class="btn-add-to-cart"><i class="fas fa-shopping-cart"></i></button>
+                <button class="btn-add-to-wishlist"><i class="fas fa-heart"></i></button>
+              </div>
+            </div>
+            <h3 class="product-name">Product Name</h3>
+            <p class="product-price">1,000,000 VND</p>
+            <p class="product-status in-stock">In Stock</p>
+          </div>
+          
+          <div class="product-item">
+            <div class="product-image-container">
+              <img src="image/cangdao-01.jpg" alt="Product Name" class="product-image">
+              <div class="product-overlay">
+                <button class="btn-add-to-cart"><i class="fas fa-shopping-cart"></i></button>
+                <button class="btn-add-to-wishlist"><i class="fas fa-heart"></i></button>
+              </div>
+            </div>
+            <h3 class="product-name">Product Name</h3>
+            <p class="product-price">2,000,000 VND</p>
+            <p class="product-status out-of-stock">Out of Stock</p>
+          </div>
+
+          <div class="product-item">
+            <div class="product-image-container">
+              <img src="image/cangdao-01.jpg" alt="Product Name" class="product-image">
+              <div class="product-overlay">
+                <button class="btn-add-to-cart"><i class="fas fa-shopping-cart"></i></button>
+                <button class="btn-add-to-wishlist"><i class="fas fa-heart"></i></button>
+              </div>
+            </div>
+            <h3 class="product-name">Product Name</h3>
+            <p class="product-price">1,000,000 VND</p>
+            <p class="product-status in-stock">In Stock</p>
+          </div>
+          
+          <div class="product-item">
+            <div class="product-image-container">
+              <img src="image/cangdao-01.jpg" alt="Product Name" class="product-image">
+              <div class="product-overlay">
+                <button class="btn-add-to-cart"><i class="fas fa-shopping-cart"></i></button>
+                <button class="btn-add-to-wishlist"><i class="fas fa-heart"></i></button>
+              </div>
+            </div>
+            <h3 class="product-name">Product Name</h3>
+            <p class="product-price">2,000,000 VND</p>
+            <p class="product-status out-of-stock">Out of Stock</p>
+          </div>
+            
+          <div class="product-item">
+            <div class="product-image-container">
+              <img src="image/cangdao-01.jpg" alt="Product Name" class="product-image">
+              <div class="product-overlay">
+                <button class="btn-add-to-cart"><i class="fas fa-shopping-cart"></i></button>
+                <button class="btn-add-to-wishlist"><i class="fas fa-heart"></i></button>
+              </div>
+            </div>
+            <h3 class="product-name">Product Name</h3>
+            <p class="product-price">1,000,000 VND</p>
+            <p class="product-status in-stock">In Stock</p>
+          </div>
+          
+          <div class="product-item">
+            <div class="product-image-container">
+              <img src="image/cangdao-01.jpg" alt="Product Name" class="product-image">
+              <div class="product-overlay">
+                <button class="btn-add-to-cart"><i class="fas fa-shopping-cart"></i></button>
+                <button class="btn-add-to-wishlist"><i class="fas fa-heart"></i></button>
+              </div>
+            </div>
+            <h3 class="product-name">Product Name</h3>
+            <p class="product-price">2,000,000 VND</p>
+            <p class="product-status out-of-stock">Out of Stock</p>
+          </div>
+
+          <div class="product-item">
+            <div class="product-image-container">
+              <img src="image/cangdao-01.jpg" alt="Product Name" class="product-image">
+              <div class="product-overlay">
+                <button class="btn-add-to-cart"><i class="fas fa-shopping-cart"></i></button>
+                <button class="btn-add-to-wishlist"><i class="fas fa-heart"></i></button>
+              </div>
+            </div>
+            <h3 class="product-name">Product Name</h3>
+            <p class="product-price">1,000,000 VND</p>
+            <p class="product-status in-stock">In Stock</p>
+          </div>
+          
+          <div class="product-item">
+            <div class="product-image-container">
+              <img src="image/cangdao-01.jpg" alt="Product Name" class="product-image">
+              <div class="product-overlay">
+                <button class="btn-add-to-cart"><i class="fas fa-shopping-cart"></i></button>
+                <button class="btn-add-to-wishlist"><i class="fas fa-heart"></i></button>
+              </div>
+            </div>
+            <h3 class="product-name">Product Name</h3>
+            <p class="product-price">2,000,000 VND</p>
+            <p class="product-status out-of-stock">Out of Stock</p>
+          </div>
+
+          <div class="product-item">
+            <div class="product-image-container">
+              <img src="image/cangdao-01.jpg" alt="Product Name" class="product-image">
+              <div class="product-overlay">
+                <button class="btn-add-to-cart"><i class="fas fa-shopping-cart"></i></button>
+                <button class="btn-add-to-wishlist"><i class="fas fa-heart"></i></button>
+              </div>
+            </div>
+            <h3 class="product-name">Product Name</h3>
+            <p class="product-price">1,000,000 VND</p>
+            <p class="product-status in-stock">In Stock</p>
+          </div>
+          
+          <div class="product-item">
+            <div class="product-image-container">
+              <img src="image/cangdao-01.jpg" alt="Product Name" class="product-image">
+              <div class="product-overlay">
+                <button class="btn-add-to-cart"><i class="fas fa-shopping-cart"></i></button>
+                <button class="btn-add-to-wishlist"><i class="fas fa-heart"></i></button>
+              </div>
+            </div>
+            <h3 class="product-name">Product Name</h3>
+            <p class="product-price">2,000,000 VND</p>
+            <p class="product-status out-of-stock">Out of Stock</p>
+          </div>
+
+          <div class="product-item">
+            <div class="product-image-container">
+              <img src="image/cangdao-01.jpg" alt="Product Name" class="product-image">
+              <div class="product-overlay">
+                <button class="btn-add-to-cart"><i class="fas fa-shopping-cart"></i></button>
+                <button class="btn-add-to-wishlist"><i class="fas fa-heart"></i></button>
+              </div>
+            </div>
+            <h3 class="product-name">Product Name</h3>
+            <p class="product-price">1,000,000 VND</p>
+            <p class="product-status in-stock">In Stock</p>
+          </div>
+          
+          <div class="product-item">
+            <div class="product-image-container">
+              <img src="image/cangdao-01.jpg" alt="Product Name" class="product-image">
+              <div class="product-overlay">
+                <button class="btn-add-to-cart"><i class="fas fa-shopping-cart"></i></button>
+                <button class="btn-add-to-wishlist"><i class="fas fa-heart"></i></button>
+              </div>
+            </div>
+            <h3 class="product-name">Product Name</h3>
+            <p class="product-price">2,000,000 VND</p>
+            <p class="product-status out-of-stock">Out of Stock</p>
+          </div>
+            
+          <div class="product-item">
+            <div class="product-image-container">
+              <img src="image/cangdao-01.jpg" alt="Product Name" class="product-image">
+              <div class="product-overlay">
+                <button class="btn-add-to-cart"><i class="fas fa-shopping-cart"></i></button>
+                <button class="btn-add-to-wishlist"><i class="fas fa-heart"></i></button>
+              </div>
+            </div>
+            <h3 class="product-name">Product Name</h3>
+            <p class="product-price">1,000,000 VND</p>
+            <p class="product-status in-stock">In Stock</p>
+          </div>
+          
+          <div class="product-item">
+            <div class="product-image-container">
+              <img src="image/cangdao-01.jpg" alt="Product Name" class="product-image">
+              <div class="product-overlay">
+                <button class="btn-add-to-cart"><i class="fas fa-shopping-cart"></i></button>
+                <button class="btn-add-to-wishlist"><i class="fas fa-heart"></i></button>
+              </div>
+            </div>
+            <h3 class="product-name">Product Name</h3>
+            <p class="product-price">2,000,000 VND</p>
+            <p class="product-status out-of-stock">Out of Stock</p>
+          </div>
+
+          <div class="product-item">
+            <div class="product-image-container">
+              <img src="image/cangdao-01.jpg" alt="Product Name" class="product-image">
+              <div class="product-overlay">
+                <button class="btn-add-to-cart"><i class="fas fa-shopping-cart"></i></button>
+                <button class="btn-add-to-wishlist"><i class="fas fa-heart"></i></button>
+              </div>
+            </div>
+            <h3 class="product-name">Product Name</h3>
+            <p class="product-price">1,000,000 VND</p>
+            <p class="product-status in-stock">In Stock</p>
+          </div>
+          
+          <div class="product-item">
+            <div class="product-image-container">
+              <img src="image/cangdao-01.jpg" alt="Product Name" class="product-image">
+              <div class="product-overlay">
+                <button class="btn-add-to-cart"><i class="fas fa-shopping-cart"></i></button>
+                <button class="btn-add-to-wishlist"><i class="fas fa-heart"></i></button>
+              </div>
+            </div>
+            <h3 class="product-name">Product Name</h3>
+            <p class="product-price">2,000,000 VND</p>
+            <p class="product-status out-of-stock">Out of Stock</p>
+          </div>
+
+          <div class="product-item">
+            <div class="product-image-container">
+              <img src="image/cangdao-01.jpg" alt="Product Name" class="product-image">
+              <div class="product-overlay">
+                <button class="btn-add-to-cart"><i class="fas fa-shopping-cart"></i></button>
+                <button class="btn-add-to-wishlist"><i class="fas fa-heart"></i></button>
+              </div>
+            </div>
+            <h3 class="product-name">Product Name</h3>
+            <p class="product-price">1,000,000 VND</p>
+            <p class="product-status in-stock">In Stock</p>
+          </div>
+          
+          <div class="product-item">
+            <div class="product-image-container">
+              <img src="image/cangdao-01.jpg" alt="Product Name" class="product-image">
+              <div class="product-overlay">
+                <button class="btn-add-to-cart"><i class="fas fa-shopping-cart"></i></button>
+                <button class="btn-add-to-wishlist"><i class="fas fa-heart"></i></button>
+              </div>
+            </div>
+            <h3 class="product-name">Product Name</h3>
+            <p class="product-price">2,000,000 VND</p>
+            <p class="product-status out-of-stock">Out of Stock</p>
+          </div>
+          <!-- Thêm các sản phẩm khác tương tự -->
+        </div>
+        <div class="pagination">
+          <!-- Chức năng phân trang -->
+        </div>
+      </div>
+    </div>
+  </main>
+  <!--End Main-->
+
+ <!--Footer-->
+ <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <h4>Giới thiệu DT Gundam</h4>
+          <p>Giúp các bạn trẻ Việt Nam dễ dàng tiếp cận với mô hình gundam</p>
+        </div>
+        <div class="col-md-3">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Shop</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h4></h4>
+          <ul>
+            <li>Địa chỉ: Tp. Hồ Chí Minh.
+              Japan Figure chưa có không gian trưng bày, bạn vui lòng hẹn trước khi đến
+              </li>
+            <li>Điện thoại: 090 8268 007</li>
+            <li>Email: support@dtgundam.vn</li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h4>Follow Us</h4>
+          <ul class="social-icons">
+            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!--End Footer-->
+
+</body>
+
+<script>
+  /*--Main*/
+  /*--Sidebar*/
+  var category = document.querySelector('.category');
+  var toggleIcon = category.querySelector('.toggle-icon');
+
+  category.addEventListener('click', function() {
+    category.classList.toggle('open');
+  });
+
+  toggleIcon.addEventListener('click', function() {
+    category.classList.toggle('open');
+  });
+
+  const priceSelect = document.getElementById('price-select');
+  const customPriceInput = document.getElementById('custom-price-input');
+
+  priceSelect.addEventListener('change', () => {
+    if (priceSelect.value === 'custom') {
+      customPriceInput.style.display = 'block';
+    } else {
+      customPriceInput.style.display = 'none';
+    }
+  });
+  /*--End Sidebar*/
+
+  /*--Phân trang*/
+  const products = document.querySelectorAll('.product-item');
+  const perPage = 24; // Số lượng sản phẩm trên mỗi trang
+  const pageLinksToShow = 5; // Số lượng liên kết trang để hiển thị ở giữa
+
+  // Tính toán số lượng trang cần thiết
+  const pageCount = Math.ceil(products.length / perPage);
+
+  // Hiển thị danh sách sản phẩm cho trang đầu tiên
+  showPage(1);
+
+  // Hàm để hiển thị danh sách sản phẩm cho một trang cụ thể
+  function showPage(page) {
+    // Tính toán chỉ số của sản phẩm đầu tiên và sản phẩm cuối cùng trên trang hiện tại
+    const start = (page - 1) * perPage;
+    const end = start + perPage;
+
+    // Ẩn tất cả các sản phẩm
+    for (let i = 0; i < products.length; i++) {
+      products[i].style.display = 'none';
+    }
+
+    // Hiển thị các sản phẩm trên trang hiện tại
+    for (let i = start; i < end && i < products.length; i++) {
+      products[i].style.display = 'block';
+    }
+
+    // Hiển thị chức năng phân trang
+    showPagination(page);
+  }
+
+  // Hàm để hiển thị chức năng phân trang
+  function showPagination(currentPage) {
+    // Lặp lại các thẻ <a> để hiển thị các trang
+    const pagination = document.querySelector('.pagination');
+    pagination.innerHTML = '';
+
+    // Tính toán các số trang cần hiển thị
+    let startIndex = Math.max(1, currentPage - Math.floor(pageLinksToShow / 2));
+    let endIndex = Math.min(pageCount, startIndex + pageLinksToShow - 1);
+    startIndex = Math.max(1, endIndex - pageLinksToShow + 1);
+
+    // Hiển thị nút "Trang trước" nếu không phải là trang đầu tiên
+    if (currentPage > 1) {
+      const prevLink = document.createElement('a');
+      prevLink.textContent = 'Trang trước';
+      prevLink.href = '#';
+      prevLink.addEventListener('click', function() {
+        showPage(currentPage - 1);
+      });
+      pagination.appendChild(prevLink);
+    }
+
+    // Hiển thị các số trang
+    for (let i = startIndex; i <= endIndex; i++) {
+      const link = document.createElement('a');
+      link.textContent = i;
+      link.href = '#';
+      link.addEventListener('click', function() {
+        showPage(i);
+      });
+
+      if (i === currentPage) {
+        link.classList.add('active');
+      }
+
+      pagination.appendChild(link);
+    }
+
+    // Hiển thị nút "Trang sau" nếu không phải là trang cuối cùng
+    if (currentPage < pageCount) {
+      const nextLink = document.createElement('a');
+      nextLink.textContent = 'Trang sau';
+      nextLink.href = '#';
+      nextLink.addEventListener('click', function() {
+        showPage(currentPage + 1);
+      });
+      pagination.appendChild(nextLink);
+    }
+  }
+  /*--End Phân trang*/
+  /*--End Main*/
+</script>
+
+</html>
