@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Thanh toán - DT Gundam</title>
+	<link rel="stylesheet" type="text/css" href="css/stylecheck.css">
+</head>
+<body>
+	<header>
+		<h1>Gundam Store</h1>
+		<nav>
+			<ul>
+				<li><a href="#">Trang chủ</a></li>
+				<li><a href="#">Sản phẩm</a></li>
+				<li><a href="#">Giỏ hàng</a></li>
+				<li class="active"><a href="#">Thanh toán</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<div class="container">
+		<main>
+			<section>
+			  <h2>Thông tin khách hàng</h2>
+			  <div>
+				<label for="customer-address">Địa chỉ:</label>
+				<select id="customer-address">
+				  <option value="">--Chọn địa chỉ--</option>
+				  <option value="1">123 Đường ABC, Quận XYZ, TP. HCM</option>
+				  <option value="2">456 Đường DEF, Quận UVW, TP. Hà Nội</option>
+				</select>
+			  </div>
+			  <div>
+				<label for="customer-name">Họ tên:</label>
+				<input type="text" id="customer-name">
+			  </div>
+			  <div>
+				<label for="customer-phone">Số điện thoại:</label>
+				<input type="tel" id="customer-phone">
+			  </div>
+			  <div>
+				<label for="customer-address-detail">Địa chỉ chi tiết:</label>
+				<input type="text" id="customer-address-detail">
+			  </div>
+			  <div>
+				<label for="customer-province">Tỉnh/thành phố:</label>
+				<select id="customer-province">
+				  <option value="">--Chọn tỉnh/thành phố--</option>
+				  <option value="1">TP. HCM</option>
+				  <option value="2">Hà Nội</option>
+				</select>
+			  </div>
+			  <div>
+				<label for="customer-district">Quận/huyện:</label>
+				<select id="customer-district">
+				  <option value="">--Chọn quận/huyện--</option>
+				  <option value="1">Quận 1</option>
+				  <option value="2">Quận 2</option>
+				</select>
+			  </div>
+			  <div>
+				<label for="customer-ward">Phường/xã:</label>
+				<select id="customer-ward">
+				  <option value="">--Chọn phường/xã--</option>
+				  <option value="1">Phường 1</option>
+				  <option value="2">Phường 2</option>
+				</select>
+			  </div>
+			</section>
+			
+			<section>
+			  <h2>Phương thức vận chuyển</h2>
+			  <div>
+				<input type="radio" name="shipping-method" id="pickup" value="pickup">
+				<label for="pickup">Nhận tại cửa hàng</label>
+			  </div>
+			  <div>
+				<input type="radio" name="shipping-method" id="delivery" value="delivery">
+				<label for="delivery">Giao hàng tận nơi</label>
+			  </div>
+			  <div id="shipping-warning" style="color: red; display: none;">Vui lòng chọn tỉnh/thành để có danh sách phương thức vận chuyển.</div>
+			  <div>
+				<label for="shipping-note">Ghi chú:</label>
+				<textarea id="shipping-note"></textarea>
+			  </div>
+			</section>
+			
+			<section>
+			  <h2>Phương thức thanh toán</h2>
+			  <div>
+				<input type="radio" name="payment-method" id="bank-transfer" value="bank-transfer">
+				<label for="bank-transfer">Chuyển khoản đến Japan Figure</label>
+				<div class="payment-note">Số tài khoản: 1234567890</div>
+			  </div>
+			  <div>
+				<input type="radio" name="payment-method" id="e-wallet" value="e-wallet">
+				<label for="e-wallet">Chuyển tiền đến ví điện tử</label>
+				<div class="payment-note">Số điện thoại: 0987654321</div>
+			  </div>
+			  <div>
+				<input type="radio" name="payment-method" id="in-store" value="in-store">
+				<label for="in-store">Đến trực tiếp cửa hàng để thanh toán</label>
+				<div class="payment-note">Địa chỉ: 123 Đường ABC, Quận XYZ, TP. HCM</div>
+			  </div>
+			  <div>
+				<input type="radio" name="payment-method" id="cod" value="cod">
+				<label for="cod">Thanh toán khi nhận hàng (COD)</label>
+				<div class="payment-note">Áp dụng cho các sản phẩm có sẵn</div>
+			  </div>
+			</section>
+		  </main>
+
+		<aside>
+			<div class="product">
+				<img src="gundam.jpg" alt="Gundam">
+				<h3>Gundam Model Kit</h3>
+				<p>Giá: 500.000 VND</p>
+				<label for="quantity">Số lượng:</label>
+				<input type="number" id="quantity" name="quantity" min="1" value="1">
+				<label for="discount">Mã giảm giá:</label>
+				<input type="text" id="discount" name="discount">
+				<button type="button" id="apply-discount">Áp dụng</button>
+				<div class="totals">
+					<p>Tổng tiền sản phẩm: 500.000 VND</p>
+					<p>Chi phí vận chuyển: 50.000 VND</p>
+					<p>Giảm giá: 0 VND</p>
+					<p>Thành tiền: 550.000 VND</p>
+				</div>
+			</div>
+		</aside>
+	</div>
+
+	<footer>
+		<p>&copy; 2023 Gundam Store</p>
+	</footer>
+</body>
+
+<script>
+	const provinces = [
+	  {
+		id: 1,
+		name: "TP. HCM",
+		districts: [
+		  { id: 1, name: "Quận 1", wards: [{ id: 1, name: "Phường 1" }, { id: 2, name: "Phường 2" }] },
+		  { id: 2, name: "Quận 2", wards: [{ id: 3, name: "Phường 3" }, { id: 4, name: "Phường 4" }] }
+		]
+	  },
+	  {
+		id: 2,
+		name: "Hà Nội",
+		districts: [
+		  { id: 3, name: "Quận Ba Đình", wards: [{ id: 5, name: "Phường Kim Mã" }, { id: 6, name: "Phường Ngọc Hà" }] },
+		  { id: 4, name: "Quận Hoàn Kiếm", wards: [{ id: 7, name: "Phường Phúc Tân" }, { id: 8, name: "Phường Cửa Đông" }] }
+		]
+	  }
+	];
+	
+	const customerProvinceSelect = document.getElementById("customer-province");
+	const customerDistrictSelect = document.getElementById("customer-district");
+	
+	customerProvinceSelect.addEventListener("change", function() {
+	  const provinceId = parseInt(this.value);
+	  const province = provinces.find(p => p.id === provinceId);
+	  customerDistrictSelect.innerHTML = "<option value=''>--Chọn quận/huyện--</option>";
+	  if (province) {
+		province.districts.forEach(district => {
+		  const option = document.createElement("option");
+		  option.value = district.id;
+		  option.textContent = district.name;
+		  customerDistrictSelect.appendChild(option);
+		});
+	  }
+	  checkShippingMethod();
+	});
+	
+	customerDistrictSelect.addEventListener("change", function() {
+	  checkShippingMethod();
+	});
+	
+	function checkShippingMethod() {
+	  const customerProvinceValue = customerProvinceSelect.value;
+	  const customerDistrictValue = customerDistrictSelect.value;
+	  if (customerProvinceValue === "" || customerDistrictValue === "") {
+		document.getElementById("shipping-warning").style.display = "block";
+	  } else {
+		document.getElementById("shipping-warning").style.display = "none";
+	  }
+	}
+  </script>
+</html>

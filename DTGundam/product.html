@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/1147679ae7.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/stylepro.css" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" integrity="sha384-..." crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-..." crossorigin="anonymous"></script>
+
+    <title>DT Gundam</title>
+</head>
+<body>
+  <!--Header-->
+    <header class="header">
+      <!--Logo Slogan-->
+      <div class="logo">
+        <img src="image/logo.png" alt="logo">
+        <h1 class="slogan">Slogan của trang web</h1>
+      </div>
+      <!--End Logo Slogan-->
+      <!--Search-->
+      <div class="search">
+        <input type="text" placeholder="Tìm kiếm...">
+        <button type="submit"><i class="fa fa-search"></i></button>
+      </div>
+      <!--End Search-->
+      <!--Menu-->
+      <nav class="navigation">
+        <ul>
+          <li><a href="#">Trang chủ</a></li>
+          <li class="dropdown">
+            <a href="#">Sản phẩm</a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Gundam Japan</a></li>
+              <li><a href="#">Gundam China</a></li>
+              <li><a href="#">Các sản phẩm khác</a></li>
+              <li><a href="#">Phụ kiện</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Giới thiệu</a></li>
+          <li><a href="#">Liên hệ</a></li>
+        </ul>
+      </nav>
+      <!--End Menu-->
+      <!--Icon-->
+      <div class="user">
+        <div class="dropdown">
+          <a href="#" class="dropbtn"><i class="fa fa-user"></i></a>
+          <div class="dropdown-content">
+            <form>
+              <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+              </div>
+              <div class="form-group">
+                <label for="password">Mật khẩu:</label>
+                <input type="password" id="password" name="password" required>
+              </div>
+              <button type="submit">Đăng nhập</button>
+            </form>
+          </div>
+        </div>
+        <div class="dropdown">
+          <a href="#" class="dropbtn"><i class="fa fa-shopping-cart"></i></a>
+          <div class="dropdown-content">
+            <ul class="cart-items">
+              <li class="cart-item">
+                <img src="https://via.placeholder.com/80x80" alt="Product Image">
+                <div class="cart-info">
+                  <h4>Product Name</h4>
+                  <p>Giá: 100.000 VNĐ</p>
+                  <p>SL: 1</p>
+                </div>
+                <a href="#" class="remove-item"><i class="fa fa-times"></i></a>
+              </li>
+              <li class="cart-item">
+                <img src="https://via.placeholder.com/80x80" alt="Product Image">
+                <div class="cart-info">
+                  <h4>Product Name</h4>
+                  <p>Giá: 200.000 VNĐ</p>
+                  <p>SL: 2</p>
+                </div>
+                <a href="#" class="remove-item"><i class="fa fa-times"></i></a>
+              </li>
+              <li class="cart-total">
+                <span class="total-label">Tổng:</span>
+                <span class="total-price">500.000 VNĐ</span>
+              </li>
+              <li class="cart-buttons">
+                <a href="#" class="cart-btn checkout-btn">Thanh Toán</a>
+                <a href="#" class="cart-btn view-cart-btn">Giỏ Hàng</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="dropdown">
+          <a href="#" class="dropbtn"><i class="fa fa-heart"></i></a>
+          <div class="dropdown-content">
+            <ul class="wishlist-items">
+              <li class="wishlist-item">
+                <img src="https://via.placeholder.com/80x80" alt="Product Image">
+                <div class="wishlist-info">
+                  <h4>Product Name</h4>
+                  <p>Giá: 100.000 VNĐ</p>
+                </div>
+                <a href="#" class="remove-item"><i class="fa fa-times"></i></a>
+              </li>
+              <li class="wishlist-item">
+                <img src="https://via.placeholder.com/80x80" alt="Product Image">
+                <div class="wishlist-info">
+                  <h4>Product Name</h4>
+                  <p>Giá: 200.000 VNĐ</p>
+                </div>
+                <a href="#" class="remove-item"><i class="fa fa-times"></i></a>
+              </li>
+              <li class="wishlist-buttons">
+                <a href="#" class="wishlist-btn clear-btn">Xóa Danh Sách</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      </div>
+      <!--End Icon-->
+  </header>
+  <!--End Header-->
+
+  <!--Banner-->
+  <div class="banner">
+    <img src="image/banner_01.jpg" alt="Banner Image">
+  </div>
+  <!--End Banner-->
+
+  <!--Breadcrumbs-->
+  <section class="breadcrumbs">
+    <a href="index.html">Trang chủ</a>
+    <span> > </span>
+    <span class="current-page">Gundam jappan</span>
+  </section>
+  <!--End Breadcrumbs-->
+
+  <!--Main-->
+  <section class="product-detail">
+    <div class="product-image">
+      <div class="main-image">
+        <img src="image/bannersp_01.jpg" alt="Product Image">
+      </div>
+      <div class="thumbnail-images">
+        <img class="thumbnail active" src="image/bannersp_01.jpg" alt="Product Image">
+        <img class="thumbnail" src="image/sanpham_01.jpg" alt="Product Image">
+        <img class="thumbnail" src="image/sanpham_02.jpg" alt="Product Image">
+        <img class="thumbnail" src="image/sanpham_03.jpg" alt="Product Image">
+      </div>
+    </div>
+  
+    <div class="product-description">
+      <h1>TEST-70 Armored Colossus BAILU</h1>
+      <h2>SKU: 123456 | Thương hiệu: ABC</h2>
+      <p class="product-price">99,990 VND</p>
+      <p class="product-status" id="product-status"></p>
+      <p class="product-size">Tỉ lệ: 1/6</p>
+      <p class="product-material">Chất liệu: PVC</p>
+      <p class="product-description-text">
+        Sản phẩm Gunpla chính hãng của Bandai, sản xuất tại Nhật Bản.
+      </p>
+      <p class="product-description-text">
+        Sản phẩm giúp phát triển trí não và rèn luyện tính kiên nhẫn cho người chơi.
+      </p>
+      <p class="product-description-text">
+        Người chơi sẽ thỏa sức sáng tạo với hàng nghìn mẫu và chi tiết để có thể tạo ra sản phẩm của bản thân.
+      </p>
+      <p class="product-description-text">
+        Sản phẩm gắn với nhau bằng khớp nối, không dùng keo dán
+      </p>
+      <p class="product-description-text">
+        Phân phối bởi DT Gundam.
+      </p>
+      <div class="product-actions">
+        <div class="quantity">
+          <button class="minus-btn" type="button" name="button"><i class="fas fa-minus"></i></button>
+          <input type="text" name="quantity" value="1">
+          <button class="plus-btn" type="button" name="button"><i class="fas fa-plus"></i></button>
+        </div>
+        <button class="add-to-cart"><i class="fas fa-shopping-cart"></i></button>
+        <button class="buy-now"><i class="fas fa-heart"></i></button>
+      </div>
+    </div>
+    
+  </section>
+  <!--End Main-->
+
+  <!--Sản phẩm bán chạy nhất-->
+  <section class="popular-products">
+    <div class="container">
+      <h2 class="section-title">Sản phẩm xem nhiều nhất</h2>
+      <div class="product-list">
+        <div class="product-item">
+          <a href="#">
+            <img src="image/sanpham_01.jpg" alt="Product 1">
+            <h3>Product 1</h3>
+            <p class="price">Giá: 100.000 VNĐ</p>
+          </a>
+        </div>
+        <div class="product-item">
+          <a href="#">
+            <img src="image/sanpham_02.jpg" alt="Product 2">
+            <h3>Product 2</h3>
+            <p class="price">Giá: 200.000 VNĐ</p>
+          </a>
+        </div>
+        <div class="product-item">
+          <a href="#">
+            <img src="image/sanpham_03.jpg" alt="Product 3">
+            <h3>Product 3</h3>
+            <p class="price">Giá: 300.000 VNĐ</p>
+          </a>
+        </div>
+        <div class="product-item">
+          <a href="#">
+            <img src="image/sanpham_04.jpg" alt="Product 4">
+            <h3>Product 4</h3>
+            <p class="price">Giá: 400.000 VNĐ</p>
+          </a>
+        </div>
+        <div class="product-item">
+          <a href="#">
+            <img src="image/sanpham_01.jpg" alt="Product 5">
+            <h3>Product 5</h3>
+            <p class="price">Giá: 500.000 VNĐ</p>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--End Sản phẩm bán chạy nhất-->
+
+  <!--Footer-->
+ <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <h4>Giới thiệu DT Gundam</h4>
+          <p>Giúp các bạn trẻ Việt Nam dễ dàng tiếp cận với mô hình gundam</p>
+        </div>
+        <div class="col-md-3">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Shop</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h4></h4>
+          <ul>
+            <li>Địa chỉ: Tp. Hồ Chí Minh.
+              Japan Figure chưa có không gian trưng bày, bạn vui lòng hẹn trước khi đến
+              </li>
+            <li>Điện thoại: 090 8268 007</li>
+            <li>Email: support@dtgundam.vn</li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h4>Follow Us</h4>
+          <ul class="social-icons">
+            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!--End Footer-->
+
+</body>
+
+<script>
+  const addToCartButton = document.querySelector('.add-to-cart');
+  const buyNowButton = document.querySelector('.buy-now');
+
+  addToCartButton.addEventListener('click', addToCart);
+  buyNowButton.addEventListener('click', buyNow);
+
+  function addToCart() {
+    alert('Đã thêm sản phẩm vào giỏ hàng!');
+  }
+
+  function buyNow() {
+    alert('Đã thêm sản phẩm vào yêu thích!');
+  }
+
+  const mainImage = document.querySelector('.main-image img');
+  const thumbnails = document.querySelectorAll('.thumbnail');
+
+  thumbnails.forEach(thumbnail => {
+    thumbnail.addEventListener('click', () => {
+      // remove active class from all thumbnails
+      thumbnails.forEach(t => t.classList.remove('active'));
+
+      // add active class to clicked thumbnail
+      thumbnail.classList.add('active');
+
+      // change main image source to clicked thumbnail source
+      mainImage.src = thumbnail.src;
+    });
+  });
+
+  const productStatus = document.querySelector('#product-status');
+  productStatus.textContent = 'In Stock';
+
+  const minusButton = document.querySelector(".minus-btn");
+const plusButton = document.querySelector(".plus-btn");
+const inputField = document.querySelector("input[name='quantity']");
+
+minusButton.addEventListener("click", function() {
+  const currentValue = Number(inputField.value);
+  if (currentValue > 1) {
+    inputField.value = currentValue - 1;
+  }
+});
+
+plusButton.addEventListener("click", function() {
+  const currentValue = Number(inputField.value);
+  inputField.value = currentValue + 1;
+});
+</script>
+
+</html>
