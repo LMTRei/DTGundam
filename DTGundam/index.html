@@ -22,6 +22,8 @@
     <script src="jquery.min.js"></script>
     <script src="owlcarousel/owl.carousel.min.js"></script>
 
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
     <title>DT Gundam</title>
 </head>
 <body>
@@ -60,19 +62,42 @@
       <!--Icon-->
       <div class="user">
         <div class="dropdown">
-          <a href="#" class="dropbtn"><i class="fa fa-user"></i></a>
+          <button class="dropbtn">
+            <i class="fa fa-user"></i>
+          </button>
           <div class="dropdown-content">
-            <form>
-              <div class="form-group">
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-              </div>
-              <div class="form-group">
-                <label for="password">Mật khẩu:</label>
-                <input type="password" id="password" name="password" required>
-              </div>
-              <button type="submit">Đăng nhập</button>
+            <form id="login-form">
+              <label for="username">Username:</label>
+              <input type="text" id="username" name="username"><br><br>
+              <label for="password">Password:</label>
+              <input type="password" id="password" name="password"><br><br>
+              <input type="submit" value="Login">
             </form>
+            <hr>
+            <a href="#" class="create-account-link">Khách hàng mới? Tạo tài khoản</a>
+            <div class="create-account-dropdown" style="display: none;">
+              <form id="create-account-form">
+                <label for="new-username">New Username:</label>
+                <input type="text" id="new-username" name="new-username"><br><br>
+                <label for="new-password">New Password:</label>
+                <input type="password" id="new-password" name="new-password"><br><br>
+                <label for="confirm-password">Confirm Password:</label>
+                <input type="password" id="confirm-password" name="confirm-password"><br><br>
+                <input type="submit" value="Create Account">
+              </form>
+              <hr>
+              <a href="#" class="back-to-login-link">Quay lại đăng nhập</a>
+            </div>
+            <hr>
+            <a href="#" class="forgot-password-link">Quên mật khẩu?</a>
+            <div class="forgot-password-dropdown" style="display: none;">
+              <form id="forgot-password-form">
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email"><br><br>
+                <input type="submit" value="Reset Password">
+              </form>
+              <hr>
+            </div>
           </div>
         </div>
         <div class="dropdown">
@@ -135,7 +160,7 @@
           </div>
         </div>
       </div>
-      </div>
+    </div>
       <!--End Icon-->
   </header>
   <!--End Header-->
@@ -456,6 +481,42 @@
 </body>
 
 <script>
+const createAccountLink = document.querySelector(".create-account-link");
+const createAccountDropdown = document.querySelector(".create-account-dropdown");
+const backToLoginLink = document.querySelector(".back-to-login-link");
+const loginForm = document.querySelector("#login-form");
+const createAccountForm = document.querySelector("#create-account-form");
+
+createAccountLink.addEventListener("click", function (event) {
+  event.preventDefault();
+  loginForm.style.display = "none";
+  createAccountDropdown.classList.add("show-create-account-dropdown");
+});
+
+backToLoginLink.addEventListener("click", function (event) {
+  event.preventDefault();
+  loginForm.style.display = "block";
+  createAccountDropdown.classList.remove("show-create-account-dropdown");
+});
+
+
+$(document).ready(function() {
+    // Show/hide create account dropdown
+    $(".create-account-link").click(function() {
+      $(".create-account-dropdown").toggle();
+    });
+
+    // Show/hide forgot password dropdown
+    $(".forgot-password-link").click(function() {
+      $(".forgot-password-dropdown").toggle();
+    });
+
+    // Hide create account/forgot password dropdown when back to login link is clicked
+    $(".back-to-login-link").click(function() {
+      $(".create-account-dropdown").hide();
+      $(".forgot-password-dropdown").hide();
+    });
+  });
   /*----Slide----*/
   const dots = document.querySelectorAll('.dot');
   const slides = document.querySelectorAll('.slide');
